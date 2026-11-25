@@ -1,0 +1,7 @@
+import { cn } from "./utils";
+
+describe("cn", () => {
+	it("merges conflicting Tailwind classes, last one wins", () => {
+		expect(cn("p-2", "p-4")).toBe("p-4");
+	});
+});

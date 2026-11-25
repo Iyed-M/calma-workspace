@@ -1,0 +1,1 @@
+-- Baseline migration (no tables yet). Stories add their own migrations with pnpm db:generate.
