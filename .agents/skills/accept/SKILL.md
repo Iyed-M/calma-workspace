@@ -21,6 +21,6 @@ Read `docs/agent/scrum.md` first. Run `date -Iseconds` and keep the start time.
 
 6. **Apply in Jira.**
    - **Accepted**: remove the label `a-valider`, transition to Done, and comment « Validée par le PO (<nom>) le <date> », followed by the criterion → test → result table.
-   - **Rejected**: remove the label, transition to In Progress, reassign to the author, and comment with the failed criterion and the PO's reason.
+   - **Rejected**: replace the label `a-valider` with `refusee`, reassign to the author, and comment with the failed criterion and the PO's reason. The story stays In Review (scrum.md → status flow).
 
 7. **Finish.** Log the elapsed time on the stories reviewed (comment « Validation PO »). Tell the human which stories are Done and what is left in the sprint.

@@ -24,7 +24,7 @@ Read `docs/agent/scrum.md` first. Run `date -Iseconds` and keep the start time.
 4. **Gate: PR verdict.** Show the human, in French: what the PR does (≤ 5 lines), the test results, the findings ranked by severity, and the 2–3 places in the code worth reading themselves. Ask: « Approuver, ou demander des changements ? » Use the human's words for the review comment; keep only the findings they keep.
 
 5. **Apply.**
-   - **Approve**: `gh pr review <n> --approve --body "<verdict>"`. Once checks are green, `gh pr merge <n> --squash --delete-branch`. For a story PR, add the label `a-valider` in Jira and comment « Fusionnée dans main (PR #<n>), en attente de validation par le PO ».
+   - **Approve**: `gh pr review <n> --approve --body "<verdict>"`. Once checks are green, `gh pr merge <n> --squash --delete-branch`. For a story PR, add the label `a-valider` in Jira (a story is In Review at this point) and comment « Fusionnée dans main (PR #<n>), en attente de validation par le PO ».
    - **Changes**: `gh pr review <n> --request-changes --body "<findings>"`, and comment the same on the Jira story.
 
 6. **Finish.** Log the elapsed time on the story (comment « Revue de code PR #<n> »). `git switch main && git pull`. Tell the human what happens next: the PO runs `accept`, or the author runs `next` to fix the requested changes.

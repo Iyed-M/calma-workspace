@@ -13,6 +13,7 @@ Read `docs/agent/scrum.md` first. Run `date -Iseconds` and keep the start time.
 
 2. **Start or resume.**
    - PR with changes requested: check out the branch, pull, and go to step 8.
+   - Label `refusee` (the PO rejected it after merge): read the PO's comment, then `git switch main && git pull && git switch -c SCRUM-<n>-correctif`, fix the failed criterion from step 4, and open a new PR at step 8. In step 9, remove the label `refusee` instead of transitioning.
    - Branch already exists: check it out, pull, and continue from what the story notes say is left.
    - Otherwise: assign the story to the human, transition it to In Progress, then `git switch main && git pull && git switch -c SCRUM-<n>-<slug>`. Create `docs/sprints/sprint-<N>/SCRUM-<n>.md` from `docs/sprints/_story-template.md`. If the story has no sub-tasks, create 3–6 with an assignee and an estimate in hours.
 

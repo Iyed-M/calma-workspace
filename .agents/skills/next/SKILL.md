@@ -20,7 +20,7 @@ Read `docs/agent/scrum.md` first.
    | No active sprint | `sprint-start` |
    | The active sprint ends today or has ended | `sprint-end` |
    | A PR by the other member is waiting for my review | `review-pr <n>` |
-   | One of my PRs has changes requested | `story <its key>` |
+   | One of my PRs has changes requested, or a story assigned to me has the label `refusee` | `story <its key>` |
    | I am PO and a story has the label `a-valider` | `accept` |
    | A story assigned to me is In Progress | `story <key>` |
    | A To Do story of the sprint is on my side of the split in `docs/sprints/sprint-<N>/README.md` (or unassigned if there is no split yet) | `story <key>` |

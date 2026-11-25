@@ -43,9 +43,9 @@ Suggested split, which `sprint-start` refines (Iyed / teammate, and the seam bet
   | PR open | In Review |
   | Merged, waiting for the PO | In Review + label `a-valider` |
   | Accepted by the PO | Done, label removed |
-  | Rejected by the PO | In Progress, label removed, comment naming the failed criterion |
+  | Rejected by the PO | stays In Review, label `a-valider` replaced by `refusee`, reassigned to the author, comment naming the failed criterion |
 
-  Move statuses with `transitionJiraIssue` (list the issue's transitions first). Never move a story to Done outside `accept`.
+  The workflow only moves forward, one step at a time: `start work` (id 2) To Do → In Progress, `start review` (id 3) In Progress → In Review, `merge` (id 4) In Review → Done. To skip ahead, chain them: closing a sub-task from To Do is 2, 3, 4. There is no way back, which is why rejection uses the `refusee` label; `story` removes it when the fix goes back to review. Never move a story to Done outside `accept`.
 - **Sub-tasks**: each story has 3–6, each with an assignee and an Original Estimate in hours. They are the report's Sprint Backlog table (task, owner, hours).
 - **Worklogs**: at the start of a skill run `date -Iseconds`; at the end, log the elapsed time (rounded to 15 min) on the sub-tasks or story you worked on, as the human you work for. The time is the real duration of the session. Never estimate or invent logged time.
 - Write everything in Jira in French.
