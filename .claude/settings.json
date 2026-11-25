@@ -1,0 +1,31 @@
+{
+	"permissions": {
+		"allow": [
+			"Bash(pnpm:*)",
+			"Bash(git:*)",
+			"Bash(gh:*)",
+			"Bash(docker compose:*)",
+			"Bash(date:*)",
+			"mcp__atlassian__atlassianUserInfo",
+			"mcp__atlassian__getAccessibleAtlassianResources",
+			"mcp__atlassian__discover",
+			"mcp__atlassian__getJiraIssue",
+			"mcp__atlassian__searchJiraIssuesUsingJql",
+			"mcp__atlassian__listJiraIssueComments",
+			"mcp__atlassian__createJiraIssue",
+			"mcp__atlassian__editJiraIssue",
+			"mcp__atlassian__transitionJiraIssue",
+			"mcp__atlassian__addOrEditJiraIssueComment",
+			"mcp__atlassian__executeRead",
+			"mcp__atlassian__executeWrite"
+		],
+		"deny": [
+			"Bash(git push --force:*)",
+			"Bash(git push -f:*)",
+			"Bash(git push * --force*)",
+			"Bash(git push origin main*)",
+			"Bash(gh pr merge * --admin*)",
+			"Bash(gh repo delete:*)"
+		]
+	}
+}
