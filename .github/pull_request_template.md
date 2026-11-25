@@ -4,20 +4,20 @@
 
 ### Acceptance criteria → tests
 
-| Acceptance criterion | Test |
-| :--- | :--- |
-| | |
+| Acceptance criterion | Test | Evidence |
+| :--- | :--- | :--- |
+| | | |
 
 ### Definition of Done
 
 - [ ] Reviewed and approved by the other team member
-- [ ] CI green (unit tests + lint)
-- [ ] Runs from a clean local checkout (`pnpm db:migrate && pnpm build && pnpm preview`)
-- [ ] PO validated every acceptance criterion on a local run
+- [ ] CI green (lint, typecheck, unit tests, acceptance tests)
+- [ ] `pnpm db:reset && pnpm test:e2e` passes locally
+- [ ] PO validated every acceptance criterion (`accept`, after merge)
 
-### Notes for the review / report
+### Story notes
 
-<!-- Difficulties, notable decisions (link the ADR), screenshots of the UI. -->
+`docs/sprints/sprint-<N>/SCRUM-<n>.md`
 
 ### Candidate tickets (out of scope)
 

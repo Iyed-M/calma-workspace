@@ -1,57 +1,57 @@
-# Sprint N: <goal in one sentence>
+# Sprint N : <objectif en une phrase>
 
-Dates: YYYY-MM-DD → YYYY-MM-DD · PO: ___ · SM: ___ · Devs: both
+Dates : AAAA-MM-JJ → AAAA-MM-JJ · PO : ___ · SM : ___ · Développeurs : les deux
 
-Fill this in during the sprint, not at the end. Each section maps to the report chapter for this sprint.
+Ce fichier correspond au chapitre du rapport consacré à ce sprint. `sprint-start` remplit la partie 1, `sprint-end` remplit les parties 3 et 4, la revue et la rétrospective. Le détail de chaque story se trouve dans `SCRUM-<n>.md`, dans ce même dossier.
 
-## 1. Analysis
+## 1. Analyse
 
-**Sprint goal:**
+**Objectif du sprint :**
 
-**Selected User Stories** (with acceptance criteria as agreed at planning):
+**User stories retenues :**
 
-| Jira | US | Story | Points | Owner |
+| Jira | US | Story | Points | Responsable |
 | :--- | :--- | :--- | :---: | :--- |
 | | | | | |
 
-## 2. Design
+**Répartition et contrats partagés :**
 
-- UML diagrams (StarUML files in `docs/uml/`, exported PNG next to them): use case / class / sequence for this sprint
-- Mockups (`docs/mockups/`):
+## 2. Conception
 
-## 3. Implementation
+- Diagrammes UML (StarUML, `docs/uml/`) : cas d'utilisation, classes, séquence pour ce sprint
+- Maquettes (`docs/mockups/`) :
 
-**Sprint Backlog** (export from Jira sub-tasks: task, owner, estimated hours, logged hours):
+## 3. Implémentation
 
-| Task | Story | Owner | Est. (h) | Logged (h) |
+**Sprint Backlog** (sous-tâches Jira) :
+
+| Tâche | Story | Responsable | Estimé (h) | Réalisé (h) |
 | :--- | :--- | :--- | :---: | :---: |
 | | | | | |
 
-**Technical choices** (link ADRs):
+**Choix techniques** (ADR) :
 
-**Code excerpts worth showing** (file:line, one sentence on why):
+**Difficultés rencontrées :**
 
-**Difficulties** (log as they happen: date, problem, how it was resolved):
+## 4. Tests
 
-## 4. Testing
+**Tests unitaires (Jest) :**
 
-**Unit tests:** count, pass rate, coverage if measured. Paste the CI summary.
+**Tests d'acceptation (Playwright) :**
 
-**Acceptance tests:**
+| Story | Critère | Test | Résultat | Preuve |
+| :--- | :--- | :--- | :---: | :--- |
+| | | | | |
 
-| Story | Criterion | Steps (local run) | Result |
-| :--- | :--- | :--- | :---: |
+## Revue du sprint
+
+- Points engagés / réalisés (vélocité) :
+- Stories validées par le PO :
+- Stories refusées ou reportées (et pourquoi) :
+- Burndown : ![burndown](burndown.png)
+
+## Rétrospective
+
+| Membre | À garder | À changer | À essayer |
+| :--- | :--- | :--- | :--- |
 | | | | |
-
-## Sprint Review
-
-- Demoed:
-- Accepted by PO:
-- Rejected / carried over (and why):
-- Burndown chart: `docs/sprints/sprint-N-burndown.png` (screenshot from Jira → Reports → Burndown)
-
-## Retrospective
-
-| Keep | Change | Try next sprint |
-| :--- | :--- | :--- |
-| | | |

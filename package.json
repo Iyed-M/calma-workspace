@@ -20,8 +20,10 @@
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"typecheck": "tsc --noEmit",
-		"db:up": "docker compose up -d db",
-		"check:fix": "biome check --write"
+		"db:up": "docker compose up -d --wait db",
+		"check:fix": "biome check --write",
+		"test:e2e": "playwright test",
+		"db:reset": "docker compose down -v && docker compose up -d --wait db && drizzle-kit migrate"
 	},
 	"dependencies": {
 		"@hookform/resolvers": "^7.0.9",
@@ -55,6 +57,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.5",
+		"@playwright/test": "^1.65.1",
 		"@swc/core": "^1.16.22",
 		"@swc/jest": "^0.2.39",
 		"@tailwindcss/typography": "^0.5.16",

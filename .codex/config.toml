@@ -1,0 +1,11 @@
+# Project config for Codex (loaded once you trust this folder).
+# Skills live in .agents/skills (Codex: type $next, $story, …).
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+[sandbox_workspace_write]
+network_access = true
+
+# Jira access. After the first launch, run once: codex mcp login atlassian
+[mcp_servers.atlassian]
+url = "https://mcp.atlassian.com/v1/mcp"
